@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerrycall Chinyama - Personal Webpage</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to the World of Web Development</h1>
+        <nav>
+            <a href="#about">About Me</a> |
+            <a href="#hobbies">My Hobbies</a> |
+            <a href="#learning">Learning Plan</a> |
+            <a href="#photos">My Photos</a> |
+            <a href="#media">My Media</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section 1: About Me -->
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>
+                My name is Jerrycall Chinyama (Student ID: 202503635). I am a Cybersecurity student at 
+                Mulungushi University who is passionate about technology, programming, and web development. 
+                I am currently learning web technologies to build secure, efficient, interactive, and user-friendly 
+                digital web applications for real-world projects.
+            </p>
+        </section>
+
+        <!-- Section 2: Hobbies & Skill Steps -->
+        <section id="hobbies" class="content-section">
+            <h2>My Top 3 Hobbies</h2>
+            <ul>
+                <li>Programming</li>
+                <li>Reading</li>
+                <li>Traveling</li>
+            </ul>
+
+            <h3>Steps to Improve My Web Skills</h3>
+            <ol>
+                <li>Practice HTML and CSS layouts daily.</li>
+                <li>Build interactive web projects using JavaScript.</li>
+                <li>Learn back-end integration and web security practices.</li>
+            </ol>
+            <p>Useful Resource: <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></p>
+        </section>
+
+        <!-- Section 3: Learning Plan Table -->
+        <section id="learning" class="content-section">
+            <h2>My Weekly Learning Plan</h2>
+            <table>
+                <caption>Weekly Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML5 Semantics</td>
+                        <td>Structure page sections</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS Box Model</td>
+                        <td>Style buttons and navigation</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Media & Forms</td>
+                        <td>Embed audio/video and validate forms</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section 4: Images -->
+        <section id="photos" class="content-section">
+            <h2>My Photos</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/photo1.jpg" alt="A photo of Jerrycall Chinyama">
+                    <figcaption>Self-portrait</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo2.jpg" alt="University Campus">
+                    <figcaption>Campus environment</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo3.jpg" alt="Coding Workspace">
+                    <figcaption>My setup</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Section 5: Media Players -->
+        <section id="media" class="content-section">
+            <h2>My Media</h2>
+
+            <h3>Video Introduction</h3>
+            <video controls>
+                <source src="videos/intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p><strong>Transcript:</strong> Hello! My name is Jerrycall Chinyama. I am studying Cybersecurity and I am excited to master modern web technologies.</p>
+
+            <h3>Audio Recording</h3>
+            <audio controls>
+                <source src="videos/voice.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>In this audio clip, I share why I chose to study computing and web technologies.</p>
+        </section>
+
+        <!-- Section 6: Contact Form -->
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+            <p><em>Note: This form is a browser demonstration only and does not send data.</em></p>
+            <form action="#">
+                <div>
+                    <label for="fullname">Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="topic">Topic:</label>
+                    <input type="text" id="topic" name="topic">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jerrycall Chinyama. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

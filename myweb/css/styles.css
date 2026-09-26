@@ -1,0 +1,123 @@
+/* Base Layout & Typography */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    background-color: #f7fafc;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header & Navigation Links */
+header {
+    background-color: #1a202c;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+nav a {
+    color: #63b3ed;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover, 
+nav a:focus {
+    color: #bee3f8;
+    text-decoration: underline;
+}
+
+/* Box Model: Class Selector for repeated sections */
+.content-section {
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ID Selector for a unique section styling */
+#about {
+    border-left: 5px solid #3182ce;
+}
+
+/* Responsive Images & Videos */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Photo Gallery Flexbox Layout */
+.gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery figure {
+    margin: 0;
+    max-width: 30%;
+    min-width: 200px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #cbd5e0;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #edf2f7;
+}
+
+/* Form Controls */
+form div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Interactive Submit Button */
+button {
+    background-color: #3182ce;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover, 
+button:focus {
+    background-color: #2b6cb0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #718096;
+}
