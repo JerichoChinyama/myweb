@@ -1,0 +1,166 @@
+/* General Page Reset & Base Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f7f6;
+    padding: 20px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #1e293b;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+nav a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 6px;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #f1f5f9;
+    text-decoration: underline;
+}
+
+/* Content Sections */
+.content-section {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.content-section h2 {
+    color: #0f172a;
+    border-bottom: 2px solid #38bdf8;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.content-section h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #334155;
+}
+
+/* Lists Styling */
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Learning Plan Table */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+.styled-table th, 
+.styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.styled-table th {
+    background-color: #0f172a;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* =================================================== */
+/* MEDIA CONTAINER & EXACT IMAGE/VIDEO EQUAL SIZING    */
+/* =================================================== */
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.media-card {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CRITICAL: Image & Video Identical Size Rules */
+.media-card img,
+.media-card video {
+    width: 100%;
+    max-width: 420px;        /* Fixed maximum width */
+    height: 280px;           /* Fixed height for exact equal size */
+    object-fit: cover;       /* Prevents stretching/distortion */
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.media-caption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #64748b;
+    font-style: italic;
+}
+
+/* Audio Player Container Alignment */
+.audio-wrapper {
+    width: 100%;
+    max-width: 420px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e2e8f0;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+audio {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 0.9rem;
+}
