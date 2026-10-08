@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jerrycall Chinyama - Personal Webpage</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 
     <header>
         <h1>Welcome to the World of Web Development</h1>
+        <button id="theme-toggle-btn" class="theme-btn">Switch to Dark Theme</button>
         <nav>
             <a href="#about">About Me</a> |
             <a href="#hobbies">My Hobbies</a> |
+            <a href="#projects">My Projects</a> |
             <a href="#learning">Learning Plan</a> |
             <a href="#photos">My Photos</a> |
             <a href="#media">My Media</a> |
+            <a href="#calculator">Study Calculator</a> |
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -25,29 +29,64 @@
         <section id="about" class="content-section">
             <h2>About Me</h2>
             <p>
-                My name is Jerrycall Chinyama (Student ID: 202503635). I am a Cybersecurity student at Mulungushi University who is passionate about computing, problem solving, and building modern web applications.
+                My name is Jerrycall Chinyama (Student ID: 202503635). I am an enthusiastic student pursuing studies in Cybersecurity and Information Technology at Mulungushi University. I am deeply interested in network protection, web engineering, system optimization, and building robust digital solutions that help secure data while delivering clean user experiences across platforms.
             </p>
         </section>
 
         <!-- Section 2: Hobbies & Skill Steps -->
         <section id="hobbies" class="content-section">
             <h2>My Hobbies & Skill Development</h2>
-            <p>Here are three key areas I am focusing on:</p>
+            <p>Here are three key areas I focus on daily:</p>
             <ul>
-                <li><strong>Programming & Development:</strong> Building clean applications using Java, JavaFX, HTML, and CSS.</li>
-                <li><strong>Cybersecurity Studies:</strong> Learning modern network defense and threat analysis techniques.</li>
-                <li><strong>Football & Sports:</strong> Following European football matches and tactical developments.</li>
+                <li><strong>Programming & Development:</strong> Writing desktop and web applications with Java, JavaFX, HTML, CSS, and JavaScript.</li>
+                <li><strong>Cybersecurity Research:</strong> Studying network defense mechanics, ethical hacking tools, and threat detection.</li>
+                <li><strong>Football Analytics:</strong> Tracking European league fixtures, tactical plays, and match performances.</li>
             </ul>
 
             <h3>Steps to Master Web Development</h3>
             <ol>
-                <li>Master HTML structure and semantic markup.</li>
-                <li>Apply responsive CSS layouts and media styling.</li>
-                <li>Learn version control with Git and host projects on GitHub.</li>
+                <li>Master HTML structure and modern semantic tags.</li>
+                <li>Apply responsive CSS layouts with Flexbox and media queries.</li>
+                <li>Integrate interactive JavaScript and deploy full sites on cloud platforms.</li>
             </ol>
         </section>
 
-        <!-- Section 3: Learning Plan Table -->
+        <!-- Section 3: Projects & Skills (Required for Activity 3) -->
+        <section id="projects" class="content-section">
+            <h2>Projects & Skills</h2>
+            <p>Below are key technical projects I have built during my coursework:</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>JavaFX Student App</h3>
+                    <p>Built a GUI desktop software solution utilizing JavaFX and Gradle in IntelliJ IDEA.</p>
+                    <button class="expand-btn">View Details</button>
+                    <div class="details-content hidden">
+                        <p>This project uses Object-Oriented Programming (OOP) concepts to manage local application states and streamline data workflows.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Personal Web Portfolio</h3>
+                    <p>Designed a responsive web application styled with modern CSS and vanilla JavaScript.</p>
+                    <button class="expand-btn">View Details</button>
+                    <div class="details-content hidden">
+                        <p>Incorporates Flexbox, responsive breakpoints, custom theme controls, form validation, and static hosting via Render.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Logic Control System</h3>
+                    <p>Configured Function Block Diagrams for industrial automation logic.</p>
+                    <button class="expand-btn">View Details</button>
+                    <div class="details-content hidden">
+                        <p>Designed using Schneider Electric Zelio Soft 2 to simulate controlled hardware routines and light bulb automation logic.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Learning Plan Table -->
         <section id="learning" class="content-section">
             <h2>Learning Plan</h2>
             <table class="styled-table">
@@ -60,46 +99,48 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>HTML5 Basics</td>
-                        <td>Create semantic web structures</td>
+                        <td>HTML5 & Markup</td>
+                        <td>Create semantic web structures and accessible content</td>
                         <td>Completed</td>
                     </tr>
                     <tr>
-                        <td>CSS Styling</td>
-                        <td>Style layouts and control media sizing</td>
-                        <td>In Progress</td>
+                        <td>CSS Layouts</td>
+                        <td>Master grid layouts, media queries, and responsive cards</td>
+                        <td>Completed</td>
                     </tr>
                     <tr>
-                        <td>Git & GitHub</td>
-                        <td>Manage and deploy code repositories</td>
+                        <td>JavaScript DOM</td>
+                        <td>Build dynamic forms, calculators, and interactive widgets</td>
                         <td>In Progress</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-        <!-- Section 4: My Photos -->
+
+        <!-- Section 5: My Photos -->
         <section id="photos" class="content-section">
             <h2>My Photos</h2>
             <div class="media-container">
                 <div class="media-card">
-                    <img src="images/photo1.jpg" alt="Jerrycall Chinyama Photo 1">
+                    <img src="images/photo1.jpg" alt="Jerrycall Chinyama Profile Photo">
                     <p class="media-caption">Profile Photo</p>
                 </div>
                 <div class="media-card">
-                    <img src="images/photo2.jpg" alt="Jerrycall Chinyama Photo 2">
+                    <img src="images/photo2.jpg" alt="Study Workspace at Campus">
                     <p class="media-caption">Campus & Study Workspace</p>
                 </div>
                 <div class="media-card">
-                    <img src="images/photo3.jpg" alt="Jerrycall Chinyama Photo 3">
-                    <p class="media-caption">Activities & Hobbies</p>
+                    <img src="images/photo3.jpg" alt="Web Development Project Setup">
+                    <p class="media-caption">Development Environment</p>
                 </div>
                 <div class="media-card">
-                    <img src="images/photo4.jpg" alt="Jerrycall Chinyama Photo 4">
-                    <p class="media-caption">Project Development</p>
+                    <img src="images/photo4.jpg" alt="Cybersecurity Lab Environment">
+                    <p class="media-caption">Cybersecurity Lab Session</p>
                 </div>
+            </div>
         </section>
 
-        <!-- Section 5: My Media (Audio & Video) -->
+        <!-- Section 6: My Media -->
         <section id="media" class="content-section">
             <h2>My Media</h2>
             
@@ -110,7 +151,7 @@
                         <source src="videos/intro.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="media-caption">Video Greeting & Overview</p>
+                    <p class="media-caption">Video Greeting & Course Overview</p>
                 </div>
 
                 <div class="media-card">
@@ -126,19 +167,58 @@
             </div>
         </section>
 
-        <!-- Section 6: Contact Information -->
+        <!-- Section 7: Study Hours Calculator (Interactive Feature) -->
+        <section id="calculator" class="content-section">
+            <h2>Study Hours Calculator</h2>
+            <p>Plan your weekly study goals by entering your planned schedule below:</p>
+            <div class="calc-box">
+                <div class="form-group">
+                    <label for="hours-per-day">Planned Study Hours Per Day:</label>
+                    <input type="number" id="hours-per-day" placeholder="e.g., 4" min="1" max="24">
+                </div>
+                <div class="form-group">
+                    <label for="days-per-week">Study Days Per Week (1 - 7):</label>
+                    <input type="number" id="days-per-week" placeholder="e.g., 5" min="1" max="7">
+                </div>
+                <button id="calc-btn" class="action-btn">Calculate Weekly Hours</button>
+                <div id="calc-result" class="calc-output"></div>
+            </div>
+        </section>
+
+        <!-- Section 8: Contact Form (Compulsory Feature) -->
         <section id="contact" class="content-section">
             <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, connect with me via social media or email:</p>
-            <p>
-                Email: <a href="mailto:jerrycallchinyama@gmail.com">jerrycallchinyama@gmail.com</a><br>
-                GitHub Profile: <a href="https://github.com/JerichoChinyama" target="_blank">github.com/JerichoChinyama</a>
-            </p>
+            <p class="demo-notice"><strong>Notice:</strong> Browser demonstration only — no message is sent.</p>
+            
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="user-name">Full Name:</label>
+                    <input type="text" id="user-name" name="userName" placeholder="Enter your full name">
+                    <span class="error-msg" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-email">Email Address:</label>
+                    <input type="email" id="user-email" name="userEmail" placeholder="e.g., example@domain.com">
+                    <span class="error-msg" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-message">Message:</label>
+                    <textarea id="user-message" name="userMessage" rows="4" placeholder="Type your message here..."></textarea>
+                    <span class="error-msg" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="action-btn">Submit Form</button>
+            </form>
+
+            <div id="form-summary" class="summary-card hidden"></div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Jerrycall Chinyama. All Rights Reserved.</p>
+        <p><a href="https://github.com/JerichoChinyama/myweb" target="_blank" class="footer-link">View Source on GitHub</a></p>
     </footer>
 
 </body>
